@@ -1,0 +1,43 @@
+# ---------------------------------------------------------------- benchmark
+# SycoLex is the organisers' dataset and is not redistributed here.
+sycolex/
+data/
+*.jsonl
+*.json
+!sycolex_schema.json
+
+# Exceptions: our own annotations ARE committed.
+!labels_all.csv
+
+# ------------------------------------------------------------- model outputs
+pair_model*/
+stage1_model/
+lovo_*/
+checkpoint-*/
+*.bin
+*.safetensors
+*.pt
+*.ckpt
+
+# ------------------------------------------------------------------- results
+submission*.csv
+submission*.jsonl
+lovo_results.txt
+flatten_report.txt
+*.log
+
+# -------------------------------------------------------------------- python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------------------- misc
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
